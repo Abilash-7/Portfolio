@@ -53,15 +53,15 @@ const Home = () => {
   
   return (
     <div className='home container-lg justify-content-center d-flex align-items-center'>
-      <div className="row d-flex justify-content-center w-100 align-items-center">
+      <div className=" d-flex justify-content-center w-100 align-items-center">
         <motion.div className="col-lg-12 d-flex flex-column justify-content-center align-items-center text-container  gap-sm-2" variants={textvariants} initial="initial" animate="animate">
-          <motion.h6 className='m-0 fw-bold ' variants={textvariants}>HI THERE  , <span style={{color:'gold'}}> I'M </span></motion.h6>
+          <motion.h6 className='m-0 fw-bold hitxt' variants={textvariants}>HI THERE  , <span style={{color:'gold'}}> I'M </span></motion.h6>
           {/* <span className='fs-4'>👋</span> */}
           <motion.h3 className='m-0 fw-bold py-0 name ' variants={textvariants}>ABILASH MANICKAM</motion.h3>
           <motion.p className='fw-bold role fs-3' variants={textvariants}>{role}<span className='text-white'><Cursor/></span> </motion.p>
-          <motion.div className="buttons m-0" variants={textvariants}>
+          <motion.div className="buttons m-0 " variants={textvariants}>
           <button
-  className="btn btn-sm px-4 fw-bold rounded-3"
+  className="btn btn-sm px-lg-4 px-3 fw-bold rounded-3"
   onClick={() => {
     const contactSection = document.getElementById("Contact");
     if (contactSection) {

@@ -22,25 +22,17 @@
 }
 
 /* Mobile view */
-@media(max-width:768px){
+@media(max-width:414px){
     .navbar-brand img{
-        width: 80px;
-    }
-}
-
-@media(max-width:600px){
-    .navbar{
-        margin-top: 10px;
-        padding: 10px;
-    }
-    .navbar-brand img{
-        width: 50px;
+        width: 40px;
     }
     .social{
-        gap: 10px;
+        img{
+            width: 30px;
+        }
+      
     }
-    .social a img{
-        width: 30px;
-    }
-
 }
+
+
+
