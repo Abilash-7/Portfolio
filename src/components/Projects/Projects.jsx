@@ -4,6 +4,8 @@ import { motion, useScroll, useSpring} from 'framer-motion';
 import mobile from '../../../public/assets/mobile.png'
 import todo from '../../../public/assets/todo.png'
 import weather from '../../../public/assets/weather.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLink, faCode } from '@fortawesome/free-solid-svg-icons';
 
 const projects = [
     {
@@ -64,8 +66,8 @@ const Single = ({item}) => {
                                 <p className='text-center desc m-0'>{item.desc}</p>
                                 <p style={{color:"gold"}}>Technology Used : <span style={{color:"#ccc"}}>{item.tech}</span></p>
                                 <div className="buttons d-flex gap-3">
-                                    <a href={item.live} target='_blank' className='btn btn-sm px-4 rounded-3 fw-bold'> <i className="fa-solid fa-link fw-bold pe-1"></i> Live Link</a>
-                                    <a href={item.code} className='btn btn-sm rounded-3 fw-bold' target='_blank'><i className="fa-solid fa-code fw-bold pe-1"></i> Source Code</a>
+                                    <a href={item.live} target='_blank' className='btn btn-sm px-4 rounded-3 fw-bold'> <FontAwesomeIcon icon={faLink} className="fw-bold pe-1" />Live Link</a>
+                                    <a href={item.code} className='btn btn-sm rounded-3 fw-bold' target='_blank'> <FontAwesomeIcon icon={faCode} className="fw-bold pe-1" /> Source Code</a>
                                 </div>
                             </motion.div>
 

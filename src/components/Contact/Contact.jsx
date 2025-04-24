@@ -2,8 +2,8 @@ import React, { useRef, useState } from 'react'
 import './contact.css'
 import { motion, useInView } from 'framer-motion'
 import emailjs from '@emailjs/browser'
-import up from '../../../public/assets/up.png' 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
     const variants = {
@@ -71,7 +71,7 @@ const Contact = () => {
   return (
 
     <>
-        <button className='top-btn d-flex justify-content-center align-items-center' onClick={goTop}><i class="fa-solid fa-chevron-up fs-4"></i></button>
+        <button className='top-btn d-flex justify-content-center align-items-center' onClick={goTop}>      <FontAwesomeIcon icon={faChevronUp} className="fs-4" /></button>
     <motion.div variants={variants} initial="initial" whileInView="animate" className='contact row d-flex align-items-center h-100 container justify-content-center' >
       
       <motion.div variants={variants} className="ps-lg-5 p-md-0 text-container col-lg-6 d-flex flex-column gap-lg-3 gap-sm-4 gap-md-0 mb-md-5" >
@@ -95,7 +95,7 @@ const Contact = () => {
       </motion.div>
 
       <div className="form-container p-5  col-lg-6 d-flex flex-column align-items-center jusify-content-center">
-          <motion.div initial={{opacity:1}} whileInView={{opacity:0}} transition={{duration:1,delay:1}}   className="svg mt-3">
+          <motion.div initial={{opacity:1}} whileInView={{opacity:0}} transition={{duration:.5,delay:1}}   className="svg mt-3">
           <svg height="300px" width="300px" 
                   viewBox="0 0 24 24" >
               <g>

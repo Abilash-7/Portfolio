@@ -68,7 +68,7 @@ const Home = () => {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
   }}
->
+> 
   Contact Me
 </button>
 

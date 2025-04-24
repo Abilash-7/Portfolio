@@ -3,6 +3,8 @@ import './about.css'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
 
@@ -38,8 +40,8 @@ const About = () => {
                 After that, I plan to learn backend development and aspire to become a full-stack developer.
             </p>
             <div className="icons gap-3 gap-sm-4 d-flex justify-content-center mt-4 mt-sm-5 mt-md-5 gap-md-3">
-                <a href="https://www.linkedin.com/in/abilash-m-8b5b751a3" target='_blank' className='text-black fs-3'><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Abilash-7" target='_blank' className='text-black fs-3'><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abilash-m-8b5b751a3" target='_blank' className='text-black fs-3'>      <FontAwesomeIcon icon={faLinkedin} className=" fs-3" /></a>
+                <a href="https://github.com/Abilash-7" target='_blank' className='text-black fs-3'>      <FontAwesomeIcon icon={faGithub} className="fs-3" /></a>
             </div>
         </motion.div>
 
