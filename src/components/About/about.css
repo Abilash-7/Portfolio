@@ -19,36 +19,17 @@ font-family: "Red Hat Display", sans-serif;
     color: gold !important;
 }
 
-/* Tab view  */
-@media(max-width:992px){
-    .text-container{
-        margin-top: -50px;
-    }
-}
+
 
 /* Mobile view  */
-@media(max-width:768px){
-    .about{
-        font-size: 1.2em;
+@media(max-width:414px){
+.text-container{
+    margin-top: -175px !important;
+    margin-bottom: 20px !important;
+}
+    .desc{
+        font-size: .6rem  !important;
     }
-    
 }
 
-@media(max-width:600px){
-    .about{
-        padding-top: 0px;
-        font-size: 1em;
-        margin-top: -50px;
-    }
-    .resume{
-        margin-top: -100px;
-        margin-bottom: 50px;
-    }
-    .buttons{
-        font-size: .5em;
-    }
-    .buttons a i{
-        padding: 0px;
-    }
-    
-}
+
