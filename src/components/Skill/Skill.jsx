@@ -57,21 +57,21 @@ const skills = [
     },
     {
         id: 8,
-        icon: github,
-        title: 'Github',
-        color: '#6e5494'
-    },
-    {
-        id: 9,
         icon: csharp,
         title: 'Dot Net',
         color: 'purple'
     },
     {
-        id: 10,
+        id: 9,
         icon: powerbi,
         title: 'Power BI',
         color: '#f2c811'
+    },
+    {
+        id: 10,
+        icon: github,
+        title: 'Github',
+        color: '#6e5494'
     },
     {
         id: 11,
@@ -85,10 +85,10 @@ const skills = [
 const Single = ({ item }) => {
     return (
         <div
-            className='card p-0 m-3 d-flex flex-column justify-content-center align-items-center'
+            className='card p-0 m-lg-3 d-flex flex-column justify-content-center align-items-center'
             style={{ '--glow-color': item.color }}
         >
-            <img src={item.icon} alt={item.title} width={60} />
+            <img src={item.icon} alt={item.title} width={60} className='skillicons' />
             <p className='fw-bold txt mt-2'>{item.title}</p>
         </div>
     );
@@ -115,8 +115,8 @@ const Skill = () => {
   return (
     <motion.div variants={motionvariants} initial="initial" whileInView="animate"  className='h-100 skills  container text-center d-flex flex-column justify-content-center align-items-center pt-md-5 pt-lg-0 mt-lg-0 '>
        
-        <motion.h1 variants={motionvariants}  className='display-5 fw-bold pt-lg-0 pb-3 pb-lg-0 pb-sm-5 pt-sm-5 title w-100'>SKILLS</motion.h1>
-        <motion.div variants={motionvariants}  className=" p-md-3 d-flex box  p-sm-3 gap-md-2 gap-lg-2  p-lg-3 flex-wrap align-items-center justify-content-center">
+        <motion.h1 variants={motionvariants}  className='display-5 fw-bold pt-lg-0 pb-3 pb-lg-0 pb-sm-5 pt-sm-5  title w-100'>SKILLS</motion.h1>
+        <motion.div variants={motionvariants}  className=" p-md-3 d-flex box  p-sm-3 gap-md-2 gap-lg-2   p-lg-3 flex-wrap align-items-center justify-content-center">
             {skills.map((item) => {
                 return(
                     <Single item={item}/>

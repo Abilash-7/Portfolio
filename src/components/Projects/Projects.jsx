@@ -55,16 +55,16 @@ const Single = ({item}) => {
     }
 
     return  <section> 
-                     <div className="container box d-flex justify-content-center w-100 h-100 align-items-center">
-                        <motion.div variants={motionvariants} initial="initial" whileInView="animate" className="row h-100  d-flex justify-content-center m-lg-auto">    
-                            <motion.div variants={motionvariants} className="image-container m-lg-0 mt-md-5 align-items-center col-lg-6 d-flex justify-content-center">
+                     <div className="container projBox  d-flex justify-content-center w-100 h-100 align-items-center">
+                        <motion.div variants={motionvariants} initial="initial" whileInView="animate" className="row  h-100  d-flex justify-content-center m-lg-auto">    
+                            <motion.div variants={motionvariants} className="image-container  m-lg-0 mt-md-5 align-items-center col-lg-6 d-flex justify-content-center">
                                 <img src={item.img} alt="image" className='image img-fluid  rounded-5 m-auto shadow' width={500} height={350}  />
                             </motion.div>
 
-                            <motion.div variants={motionvariants} className="text p-md-0  col-lg-6 d-flex flex-column align-items-center  gap-3 ">
+                            <motion.div variants={motionvariants} className="projcontent p-md-0  col-lg-6 d-flex flex-column justify-content-center align-items-center  gap-3 ">
                                 <h2 className='fw-bold'>{item.title}</h2>
-                                <p className='text-center desc m-0'>{item.desc}</p>
-                                <p style={{color:"gold"}}>Technology Used : <span style={{color:"#ccc"}}>{item.tech}</span></p>
+                                <p className='text-center projdesc m-0'>{item.desc}</p>
+                                <p style={{color:"gold"}} className='used' >Technology Used : <span style={{color:"#ccc"}}>{item.tech}</span></p>
                                 <div className="buttons d-flex gap-3">
                                     <a href={item.live} target='_blank' className='btn btn-sm px-4 rounded-3 fw-bold'> <FontAwesomeIcon icon={faLink} className="fw-bold pe-1" />Live Link</a>
                                     <a href={item.code} className='btn btn-sm rounded-3 fw-bold' target='_blank'> <FontAwesomeIcon icon={faCode} className="fw-bold pe-1" /> Source Code</a>
@@ -95,8 +95,8 @@ const Projects = () => {
   return (
     <div className='container' ref={ref}>
            
-         <div className="progress-container text-center">
-            <h1 className='fw-bold pb-2 display-5 title' >PROJECTS</h1>
+         <div className="progress-container  text-center">
+            <h1 className='fw-bold pb-2 display-5 protitle ' >PROJECTS</h1>
             <motion.div style={{scaleX:scaleX}} className="progressBar"></motion.div>
         </div>
         {

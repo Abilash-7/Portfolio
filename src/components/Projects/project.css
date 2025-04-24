@@ -24,59 +24,47 @@ span{
     border: 1px solid gold;
     color: gold;
 }
-.text{
-    justify-content: center;
-}
 .desc{
     font-size: 1rem;;
 }
 .title{
     letter-spacing: 1px !important;
 }
-/* Tap view */
-@media(max-width:992px){
-    .row{
-        position: relative;
-    }
-    .text{
-        margin-top: -200px;
-        position: relative;
-        overflow: hidden;
-    }
-    .progress-container{
-        top: 50px;
-    }
-}
+
 
 /* Mobile view */
-@media(max-width:768px){
-   
-    .text{
-        position: relative;
-        margin-top: -400px;
-        overflow: hidden;
-    }
+@media(max-width:414px){
+
+.protitle{
+    padding: 0px !important;
+}
+.progress-container{
+    padding-top: 60px !important;
+}
+  .image{
+    width: 300px;
+    height: 200px;
+  }
+  .image-container{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .row{
+    margin-top:75px;
+  }
+  .projcontent{
+    margin-top: -150px !important;
+  }
+  .projdesc{
+    margin: 0px !important;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    font-size: .6rem;;
+    padding: 10px !important;
+    color:  #fff !important;
+  }
+  .used{
+    font-size: .8rem !important;
+  }
 }
 
-@media(max-width:600px){
-    .progress-container{
-        z-index: 1;
-        padding-top: 0px;
-    }
-    .row{
-        padding: 10px;
-        margin-top: 200px;
-    }
-    .image-container{
-        padding: 0px 30px;
-    }
-    .text{
-        font-size: .7em;
-        z-index: 1;        
-        h1{
-            font-size: 2em;
-            margin-top: -120px;
-        }
-        margin: 0px;
-    }
-}

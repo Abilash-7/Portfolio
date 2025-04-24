@@ -67,47 +67,38 @@ h5{
 }
 
 /* Mobile view */
-@media(max-width:768px){
-    .text-container{
-        padding-left: 100px;
+@media(max-width:414px){
+    .contact{
+        margin-top: 50px;
     }
-    .form-container{
-        margin-top: -200px;
-    }
+.top-btn{
+    top: 75px;
+    width: 25px;
+    height: 25px;
 }
-
-@media(max-width:600px){
-    .text-container{
-        padding: 0px 30px;
-        margin: auto;
-        p p{
-            font-size: 1em;
-        }
-    }
-
-    .form-container{
-        margin: 0px;
-
-        svg{
-            width: 200px;
-        }
-
-        form{
-            margin: 0;
-            
-                input,textarea{
-                    padding: 5px;
-                    background: transparent;
-                    border: 2px solid #fff;
-                    color: white;
-                    font-weight: bold;
-                    font-size: .7em;
-                    border-radius: 5px;
-                } 
-
-                .submit{
-                    font-size: .7em;
-                }
-        }
-    }
+.top-icon{
+    font-size: .6rem !important;
+    font-weight: bold;
+}
+.optTitle{
+    font-size: .8rem;
+}
+form{
+    input,textarea{
+        padding: 2px 10px;
+        background: transparent;
+        border: 2px solid #fff;
+        color: white;
+        font-size: .8rem;
+        font-weight: bold;
+        border-radius: 5px;
+    } 
+}
+.form-container{
+    margin-top: -50px;
+}
+.inboxIcon{
+    width: 220px !important;
+    height: 220px  !important;
+}
 }

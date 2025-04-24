@@ -27,7 +27,7 @@ const About = () => {
     <motion.div variants={textvariants} initial="initial" whileInView="animate" className='about container  d-flex flex-column justify-content-center align-items-center  h-100 mt-md-5 mt-lg-5 p-sm-0'>
   
     {/* about */}
-        <motion.div variants={textvariants} className="text-container text-center py-lg-5 pb-md-5 p-md-0">
+        <motion.div variants={textvariants} className="text-container text-center  py-lg-5 pb-md-5 p-md-0">
             <h1 className='display-5 fw-bold  pb-3 title' >ABOUT</h1>
             <p className='px-lg-5  desc'>  
                 Hello! My name is Abilash, and I have completed my studies in B.Tech (Information Technology) in 2023. I developed an interest in web development during my college years. I experimented with basic HTML programs, including forms, buttons, and especially CSS, which added a more attractive look and feel to the HTML. 
