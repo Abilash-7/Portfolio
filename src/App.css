@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+AU+VIC+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif !important;   
+}
+body{
+    /* background: #000; */
+    background: url(../public/assets/earth.JPG);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-size: 1.2em;
+    
+}
+
+section{
+    scroll-snap-align: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-btn{
+    position: absolute;
+    bottom: 80px;
+    right: 100px;
+    box-shadow: 1px 1px 20px #999;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 99;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+.top-btn:hover{
+    transform: scale(1.2);
+}
+
+.loading img{
+    animation: rotate 1s infinite;
+}
+.loading .border{
+    border-radius: 50%;
+    padding: 10px 10px 12px 10px;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+
+
+@media(max-width:600px){
+ 
+    .top-btn{
+        position: absolute;
+        bottom: 750px;
+        right: 30px;
+        box-shadow: 1px 1px 20px #999;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        z-index: 99;
+        background: #fff;
+        border-radius: 50%;
+        padding: 6px;
+    }   
+    .top-btn img{
+        width: 20px;
+    }
+
+    footer p{
+        font-size: .5em;
+        padding: 0px;
+    }
+}

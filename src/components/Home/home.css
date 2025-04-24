@@ -1,0 +1,98 @@
+.home{
+    height: 100vh;
+    overflow: hidden;
+}
+.text-container{
+    margin-top: -100px;
+
+   button{
+    background: black;
+    color: #fff;
+   }
+   button:hover{
+    background: gold;
+    color: #000;
+   }
+   a{
+    text-decoration: none;
+   }
+}
+.scroll{
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+    margin-left: -15px;
+}
+.name{
+    font-size: 3em;
+    letter-spacing: 4px;
+    
+  font-family: "Red Hat Display", sans-serif;   
+    /* text-shadow: 5px 2px  #3d6cb9; */
+}
+.image-container{
+    img{
+        margin-top: -100px;
+    }
+}
+
+.role{
+    color: gold;
+}
+
+/* Tap view */
+@media(max-width:992px){
+    .row{
+        height: 100%;
+    }
+    .text-container{
+        padding-top: 100px;
+    }
+    
+    .image-container img{
+        width: 600px;
+        margin-left: 300px;
+    }
+    .role{
+        font-size: 1.5em;
+    }
+    .scroll{
+        margin-left: 100px;
+    }
+}
+
+/* Mobile view */
+@media(max-width:768px){
+    .text-container{
+        font-size: .9em;
+        margin-left: -100px;
+        padding-bottom: 100px;
+    }
+    .image-container img{
+        width: 900px;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:600px){
+    
+    .text-container{
+        font-size: .5em;
+        margin-left: -90px;
+        margin-top: -50px;
+        padding-bottom: 100px;
+    }
+    .btn{
+        font-size: 1em;
+    }
+    .mouse img{
+        width: 40px;
+    }
+    .mouse{
+        margin-left: -90px ;
+    }
+
+    
+    
+
+}
+
