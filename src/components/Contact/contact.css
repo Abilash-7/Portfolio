@@ -83,17 +83,25 @@ h5{
 .optTitle{
     font-size: .8rem;
 }
-form{
-    input,textarea{
+form {
+    input,
+    textarea {
         padding: 2px 10px;
         background: transparent;
         border: 2px solid #fff;
         color: white;
-        font-size: .8rem;
+        font-size: 0.8rem;
         font-weight: bold;
         border-radius: 5px;
-    } 
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: white;
+        opacity: 1;
+    }
 }
+
 .form-container{
     margin-top: -50px;
 }
