@@ -40,12 +40,12 @@
 /* Mobile view view */
 @media(max-width:414px){
  .card{    
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin: 7px;
  }
  .skillicons{
-    width: 40px !important;
+    width: 35px !important;
  }
  .txt{
     font-size: .7rem;
